@@ -1,4 +1,4 @@
-import statistics
+from statistics import mean, median, mode
 
 #Problems in code: 
 # 1. Mode (if/else) statement
@@ -49,20 +49,20 @@ def get_list(prompt):
 def get_mean():
     
     array = get_list("Integer: ")
-    return statistics.mean(array)
+    return mean(array)
 
 # Median Function -> median(s)
 def get_median():
     
     array = get_list("Integer: ")
-    return statistics.median(array)
+    return median(array)
     # if there are 2 medians output
 
 # Mode Function -> mode(s)
 def get_mode():
     
     array = get_list("Integer: ")
-    return statistics.mode(array)
+    return mode(array)
     # if there is no mode then output "N/A"
     # if there is more than 1 mode output all modes
     
