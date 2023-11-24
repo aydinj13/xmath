@@ -22,20 +22,12 @@ def get_list(prompt):
                         b = int(input(prompt))
                         return [a, b]
                         
-    
-    
-                    
-
             elif num == 3:
                 
-                    
                     a = int(input(prompt))
                     b = int(input(prompt))
                     c = int(input(prompt))
                     return [a, b, c]
-                                    
-                
-                    e
 
             elif num == 4:
                 
@@ -44,9 +36,6 @@ def get_list(prompt):
                         c = int(input(prompt))
                         d = int(input(prompt))
                         return [a, b, c, d]
-            
-                
-                    
 
             elif num == 5:
                 
