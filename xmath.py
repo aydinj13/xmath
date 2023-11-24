@@ -9,12 +9,8 @@ import statistics
 
 
 def get_list(prompt):
-    
-                
-                    
+
             num = int(input("How many numbers (up to 5): "))
-                       
-                           
 
             if num == 2:
                 
@@ -49,27 +45,27 @@ def get_list(prompt):
             else:
                     return "N/A"
 
-    
-
+# Mean Function -> mean
 def get_mean():
     
-    array = get_list("Int: ")
+    array = get_list("Integer: ")
     return statistics.mean(array)
 
+# Median Function -> median(s)
 def get_median():
     
-    array = get_list("Int: ")
+    array = get_list("Integer: ")
     return statistics.median(array)
+    # if there are 2 medians output
 
+# Mode Function -> mode(s)
 def get_mode():
     
-    array = get_list("Int: ")
+    array = get_list("Integer: ")
+    return statistics.mode(array)
+    # if there is no mode then output "N/A"
+    # if there is more than 1 mode output all modes
     
-    # if there is no mode then output "N/A" - Error (Line 26-29)
-    if statistics.mode != 0:
-        return statistics.mode(array)
-    else:
-        return "N/A"
 
 
 
